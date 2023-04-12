@@ -78,6 +78,10 @@ ul li {
   align-items: center;
   padding-left: 20px;
   padding-right: 20px;
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 99;
 }
 .footer {
   min-height: 72px;
