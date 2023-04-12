@@ -51,3 +51,47 @@ ul li {
 .text-danger {
   color: red;
 }
+.pageWrapper {
+  display: flex;
+  position: relative;
+}
+.nav-bar {
+  width: 20%;
+  height: 100vh;
+  border-right: 1px solid rgb(234, 234, 236);
+  top: 0;
+  position: sticky;
+}
+.wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.main-content {
+  background: rgb(245, 245, 248);
+  padding: 16px 32px;
+  flex: 1;
+}
+.header {
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.footer {
+  min-height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+}
+.page-title {
+  display: inline-block;
+  height: 24px;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  color: #303c6c;
+}

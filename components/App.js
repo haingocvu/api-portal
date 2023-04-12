@@ -1,4 +1,7 @@
 import Header from './Header.js';
+import SideNav from './SideNav.js';
+import Footer from './Footer.js';
+import Main from './Main.js';
 
 export default {
   data() {
@@ -9,6 +12,9 @@ export default {
   computed: {},
   components: {
     Header,
+    SideNav,
+    Footer,
+    Main,
   },
   methods: {
     increment() {
@@ -26,7 +32,20 @@ export default {
     console.log('mounted');
   },
   template: /*html*/ `
-    <div>
-      <Header />
+    <div class="pageWrapper">
+      <div class="nav-bar">
+        <SideNav />
+      </div>
+      <div class="wrapper">
+        <div class="header">
+          <Header title="IB API Portal" />
+        </div>
+        <div class="main-content">
+          <Main />
+        </div>
+        <div class="footer">
+          <Footer title="Made by IB with love!" />
+        </div>
+      </div>
     </div>`,
 };

@@ -1,7 +1,10 @@
 export default {
   props: ['title'],
+  data() {
+    return {};
+  },
   template: /*html*/ `
     <div>
-      <span class="page-title">{{title}}<span>
-    <div>`,
+       {{title}}
+    </div>`,
 };
