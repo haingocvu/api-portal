@@ -3,11 +3,12 @@ import { getvalueFromHash } from './../utils/route.js';
 export default {
   data() {
     return {
-      currentPath: window.location.hash,
+      currentPath: '',
     };
   },
   watch: {
-    currentPath(oldPath, newPath) {
+    currentPath(newPath, oldPath) {
+      console.log(newPath);
       const swaggerUrl = getvalueFromHash(newPath);
       // TODO: read schema and render swagger ui
       window.ui = SwaggerUIBundle({
@@ -20,6 +21,7 @@ export default {
     window.addEventListener('hashchange', () => {
       this.currentPath = window.location.hash;
     });
+    this.currentPath = window.location.hash;
   },
   template: /*html*/ `
     <div>
