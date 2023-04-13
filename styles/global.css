@@ -43,6 +43,9 @@ ul {
 ul li {
   list-style-type: none;
 }
+a {
+  all: unset;
+}
 #root,
 #__next {
   isolation: isolate;
@@ -61,6 +64,7 @@ ul li {
   border-right: 1px solid rgb(234, 234, 236);
   top: 0;
   position: sticky;
+  color: #7c7c7a;
 }
 .wrapper {
   flex: 1;
@@ -89,6 +93,7 @@ ul li {
   justify-content: center;
   align-items: center;
   font-style: italic;
+  color: rgb(6, 53, 6);
 }
 .page-title {
   display: inline-block;
@@ -98,4 +103,43 @@ ul li {
   font-size: 18px;
   line-height: 24px;
   color: #303c6c;
+}
+.logo {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+.menu-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 16px;
+  margin-top: 56px;
+}
+.menu-item-wrapper {
+  display: flex;
+  align-items: flex-start;
+  padding: 14px 16px;
+  gap: 10px;
+  height: 52px;
+  border-radius: 8px;
+  flex: 1;
+  order: 0;
+  cursor: pointer;
+}
+.menu-item-wrapper.active {
+  background: rgb(245, 245, 248);
+}
+.menu-item-wrapper > .item-text {
+  height: 22px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+}
+.side-nav-wrapper {
+  margin-left: 16px;
+  margin-right: 16px;
 }

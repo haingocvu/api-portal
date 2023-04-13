@@ -5,9 +5,7 @@ import Main from './Main.js';
 
 export default {
   data() {
-    return {
-      count: 1,
-    };
+    return {};
   },
   computed: {},
   components: {
